@@ -18,7 +18,8 @@ class String
    #binding.pry
    # self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size 
    new_array = self.split(/[.!?]/)
-   new_array.delete_if {|score| score < 80 }
-  
+   new_array.delete_if do |word| 
+     binding.pry
+    end 
   end
 end
