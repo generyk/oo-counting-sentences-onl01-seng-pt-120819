@@ -20,6 +20,7 @@ class String
    new_array = self.split(/[.!?]/)
    new_array.delete_if do |word| 
      binding.pry
+     word.
     end 
   end
 end
