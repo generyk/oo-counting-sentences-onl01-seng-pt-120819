@@ -18,9 +18,10 @@ class String
    #binding.pry
    # self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size 
    new_array = self.split(/[.!?]/)
-   new_array.delete_if do |word| 
-     binding.pry
-     word.
-    end 
+   final_array = new_array.delete_if do |word| 
+     #binding.pry
+     word.empty?
+    end
+    final_array.size 
   end
 end
